@@ -34,6 +34,6 @@ public class SaveCalculatorTest extends TestCase {
     public void testDivisionTwoPositivesIsOk() {
         int value1 = 100;
         int value2 = 10;
-        assertTrue(testee.subtraktion(value1, value2) == 10);
+        assertTrue(testee.division(value1, value2) == 10);
     }
 }
