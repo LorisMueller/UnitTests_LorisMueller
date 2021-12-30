@@ -37,3 +37,5 @@ public class SaveCalculatorTest extends TestCase {
         assertTrue(testee.division(value1, value2) == 10);
     }
 }
+
+//Only one assertions each, is already added in the previous step
