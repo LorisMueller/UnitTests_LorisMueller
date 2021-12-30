@@ -36,6 +36,11 @@ public class SaveCalculatorTest extends TestCase {
         int value2 = 10;
         assertTrue(testee.division(value1, value2) == 10);
     }
+
+    //Only one assertions each, is already added in the previous step
+    
+    //it is not sensible to set a Getter or Setter for "testee"
+
+
 }
 
-//Only one assertions each, is already added in the previous step
