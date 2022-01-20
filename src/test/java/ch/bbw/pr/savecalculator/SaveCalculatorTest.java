@@ -61,6 +61,14 @@ public class SaveCalculatorTest {
         assertTrue(testee.summeProtected(value1, value2) == 30);
     }
 
+    //Package protected Methods can also be tested...
+    @Test
+    public void testPackageProtectedMethodisOk() {
+        int value1 = 10;
+        int value2 = 20;
+        assertTrue(testee.summePackageProtected(value1, value2) == 30);
+    }
+
 
     //Only one assertions each, is already added in the previous step
     
