@@ -52,6 +52,15 @@ public class SaveCalculator {
 		}
 		return value1 * value2;
 	}
+
+	protected int summeProtected(int summand1, int summand2) throws ArithmeticException
+	{
+		long value = (long) summand1 + (long) summand2;
+		if ((value > Integer.MAX_VALUE) || (value < Integer.MIN_VALUE)){
+			throw new ArithmeticException();
+		}
+		return summand1 + summand2;
+	}
 	//pow
 	//sqrt
 	//...

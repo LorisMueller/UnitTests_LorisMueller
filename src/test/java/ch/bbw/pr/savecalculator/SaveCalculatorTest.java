@@ -53,12 +53,20 @@ public class SaveCalculatorTest {
         testee.summe(value1, value2);
     }
 
+    //Protected Methods can be tested...
+    @Test
+    public void testProtectedMethodisOk() {
+        int value1 = 10;
+        int value2 = 20;
+        assertTrue(testee.summeProtected(value1, value2) == 30);
+    }
+
 
     //Only one assertions each, is already added in the previous step
     
     //it is not sensible to set a Getter or Setter for "testee"
 
-    //Sichtbarkeit: All this test in this file are test for a public method and also protected methods (because these tests are under the same package, as the method)
+    //Sichtbarkeit: All this test in this file are test for a public method and also package protected methods (because these tests are under the same package, as the method)
 
     //Sichtbarkeit: You can't test a private Method, because she is private and you can't access to it with a Test
 
